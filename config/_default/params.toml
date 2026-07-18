@@ -51,7 +51,7 @@ titleCase = false
   showTaxonomies = true
   showWordCount = false
   showComments = false         # off for now — giscus can drop in here later
-  sharingLinks = ["linkedin", "twitter", "email", "link"]
+  sharingLinks = []            # no share buttons at the bottom of pages
 
 # ── Section / list pages ──────────────────────────────────────────────────
 [list]
