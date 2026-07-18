@@ -6,6 +6,7 @@ description: "Notes on packaging a Go service into a small, reproducible Docker 
 summary: "A learning-log entry on multi-stage Docker builds for Go — from a 900 MB naive image down to a ~15 MB distroless artifact, and why each step matters."
 tags: ["docker", "go", "devops", "learning-log"]
 categories: ["Learning Log"]
+projects: ["algo-trading-bot", "infra-devops"]
 ---
 
 {{< alert icon="pencil" >}}

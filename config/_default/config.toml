@@ -8,6 +8,7 @@ enableRobotsTXT = true
   pagerSize = 10
 
 [taxonomies]
+  project = "projects"
   tag = "tags"
   category = "categories"
 

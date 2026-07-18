@@ -29,7 +29,7 @@ titleCase = false
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "/bot-architecture/"
+  showMoreLinkDest = "/projects/"
   cardView = true              # recent posts as image cards
   layoutBackgroundBlur = true
 

@@ -11,7 +11,7 @@ title = "Yatee Patel"
 # Bio, social links and avatar are placeholders — refine these later.
 [params.author]
   name = "Yatee Patel"
-  image = "img/author.png"
+  image = "img/author.jpg"
   headline = "CS student · building an algo-trading bot"
   bio = "Placeholder bio — I document the design of a live algorithmic trading bot for Indian equity derivatives, plus notes on Go, Docker and systems design. (Refine me later.)"
   links = [

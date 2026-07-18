@@ -23,7 +23,7 @@ order routing, and reconciliation that stays honest when things go wrong.
 
 ## What I write about
 
-- **[Bot Architecture](/bot-architecture/)** — deep dives on the system's design.
+- **[Projects](/projects/)** — the work grouped end-to-end, with every post that documents it.
 - **[Learning Log](/learning-log/)** — notes on the tools and ideas I'm picking up.
 - **[Misc](/misc/)** — shorter, essay-style posts.
 

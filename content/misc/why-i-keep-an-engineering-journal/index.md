@@ -6,6 +6,7 @@ description: "A short, personal note on why this blog exists and what I hope to 
 summary: "Writing forces the vague understanding in your head to become something precise enough to publish. That gap is where the learning happens."
 tags: ["writing", "meta", "learning"]
 categories: ["Misc"]
+projects: ["this-blog"]
 ---
 
 {{< alert icon="pencil" >}}
@@ -34,7 +35,7 @@ laptop. This journal is an attempt to make some of it stick.
 
 ## What you'll find here
 
-- **Bot Architecture** — deep dives on the trading engine's design.
+- **Projects** — the work grouped end-to-end, with the posts documenting each.
 - **Learning Log** — notes on Go, Docker and systems design as I pick them up.
 - **Misc** — shorter, less structured thoughts like this one.
 

@@ -1,0 +1,22 @@
+{{- /* One card. Call with: (dict "page" $page "summary" $text "meta" $text) */ -}}
+{{- $page := .page -}}
+{{- $meta := .meta -}}
+{{- $summary := .summary -}}
+{{- $images := $page.Resources.ByType "image" -}}
+{{- $feature := $images.GetMatch ($page.Params.feature | default "*feature*") | default ($images.GetMatch "*thumb*") -}}
+<a class="proj-card" href="{{ $page.RelPermalink }}" aria-label="{{ $page.Title }}">
+  {{- with $feature }}
+    {{- if eq .MediaType.SubType "svg" -}}
+      <img class="proj-card__img" src="{{ .RelPermalink }}" alt="" />
+    {{- else -}}
+      {{- $img := .Fill "640x360 smart" -}}
+      <img class="proj-card__img" src="{{ $img.RelPermalink }}" width="640" height="360" alt=""
+        {{- if site.Params.enableImageLazyLoading | default true }} loading="lazy"{{ end }} />
+    {{- end -}}
+  {{- end }}
+  <div class="proj-card__body">
+    <h3 class="proj-card__title">{{ $page.Title | emojify }}</h3>
+    {{- with $meta }}<div class="proj-card__meta">{{ . }}</div>{{- end }}
+    {{- with $summary }}<p class="proj-card__desc">{{ . | plainify | truncate 160 }}</p>{{- end }}
+  </div>
+</a>

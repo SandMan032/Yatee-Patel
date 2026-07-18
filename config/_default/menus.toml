@@ -1,6 +1,6 @@
 [[main]]
-  name = "Bot Architecture"
-  pageRef = "/bot-architecture"
+  name = "Projects"
+  pageRef = "/projects"
   weight = 10
 
 [[main]]

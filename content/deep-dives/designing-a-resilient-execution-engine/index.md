@@ -5,7 +5,8 @@ draft: false
 description: "A tour of the moving parts behind a low-latency order-execution engine — and how each layer fails gracefully."
 summary: "How the execution engine is structured into ingestion, strategy, risk and order-routing layers — and the design choices that keep it alive when a broker socket drops mid-session."
 tags: ["architecture", "go", "systems-design", "trading"]
-categories: ["Bot Architecture"]
+categories: ["Deep Dives"]
+projects: ["algo-trading-bot"]
 ---
 
 {{< alert icon="pencil" >}}
