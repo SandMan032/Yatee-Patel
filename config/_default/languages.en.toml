@@ -8,14 +8,13 @@ title = "Yatee Patel"
   description = "Engineering notes on building a live algorithmic trading bot — architecture, Go, Docker and systems design."
 
 # The author card is the centrepiece of the profile homepage.
-# Bio, social links and avatar are placeholders — refine these later.
 [params.author]
   name = "Yatee Patel"
   image = "img/author.jpg"
   headline = "CS student · building an algo-trading bot"
   bio = "Placeholder bio — I document the design of a live algorithmic trading bot for Indian equity derivatives, plus notes on Go, Docker and systems design. (Refine me later.)"
   links = [
-    { email = "mailto:placeholder@example.com" },
+    { email = "mailto:patelyatee09@gmail.com" },
     { github = "https://github.com/SandMan032" },
-    { linkedin = "https://www.linkedin.com/in/your-handle/" },
+    { linkedin = "https://www.linkedin.com/in/yatee-patel/" },
   ]
