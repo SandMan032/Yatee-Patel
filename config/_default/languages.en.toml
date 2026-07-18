@@ -4,14 +4,14 @@ weight = 1
 title = "Yatee Patel"
 
 [params]
-  # Short tagline used in SEO/meta and some list views — placeholder for now.
-  description = "Engineering notes on building a live algorithmic trading bot — architecture, Go, Docker and systems design."
+  # Short tagline used in SEO/meta and some list views.
+  description = "I'm a CS student building backend systems and infrastructure. This is where I document the architecture, the tooling, and the process behind software that has to be right in real time."
 
 # The author card is the centrepiece of the profile homepage.
 [params.author]
   name = "Yatee Patel"
   image = "img/author.jpg"
-  headline = "CS student · building an algo-trading bot"
+  headline = "CS student · building systems that run in real time"
   bio = "CS student writing about backend systems, infra, and what I'm learning along the way."
   links = [
     { email = "mailto:patelyatee09@gmail.com" },
