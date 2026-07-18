@@ -1,0 +1,16 @@
+baseURL = "https://SandMan032.github.io/"
+title = "Yatee Patel"
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Required so Congo can build its client-side search index (search.json)
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

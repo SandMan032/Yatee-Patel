@@ -1,0 +1,19 @@
+[[main]]
+  name = "Bot Architecture"
+  pageRef = "/bot-architecture"
+  weight = 10
+
+[[main]]
+  name = "Learning Log"
+  pageRef = "/learning-log"
+  weight = 20
+
+[[main]]
+  name = "Misc"
+  pageRef = "/misc"
+  weight = 30
+
+[[main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 40

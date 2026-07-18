@@ -1,28 +1,79 @@
-# My Tech Blog
+# Yatee Patel — Engineering Blog
 
-A personal tech blog built with Hugo and the PaperMod theme.
+A personal tech blog documenting the design of an algorithmic trading bot, plus
+notes on Go, Docker and systems design.
 
-## Quick Start
+- **Framework:** [Hugo](https://gohugo.io/) (Extended)
+- **Theme:** [Congo v2](https://github.com/jpanther/congo), installed as a **Hugo Module** (not a git submodule)
+- **Hosting:** GitHub Pages, deployed via GitHub Actions (`.github/workflows/deploy.yml`)
 
-### Writing a New Post
-To create a new blog post, run:
+## Prerequisites
+
+- Hugo **Extended** (`hugo version` should show `+extended`)
+- **Go** (required — Congo is a Hugo Module, so `hugo` uses Go to fetch it)
+
+## Site structure
+
+Content is organised into dedicated sections, each a Hugo **page bundle**
+(a folder with `index.md` plus its images):
+
+| Path | Purpose |
+| --- | --- |
+| `content/bot-architecture/` | Deep dives on the trading bot's design |
+| `content/learning-log/` | Notes on Go, Docker, systems design |
+| `content/misc/` | Shorter, essay-style posts |
+| `content/about/` | About page |
+
+Each section has an `_index.md` (its landing-page description). The homepage
+intro lives in `content/_index.md`.
+
+## Configuration
+
+Config is split under `config/_default/`:
+
+| File | Contains |
+| --- | --- |
+| `config.toml` | Base settings, permalinks, taxonomies, output formats |
+| `module.toml` | Imports the Congo v2 Hugo Module |
+| `params.toml` | Congo appearance & feature flags (`ocean` scheme, hero images, search, TOC…) |
+| `languages.en.toml` | Language settings + the author profile card |
+| `menus.toml` | Top navigation bar |
+
+## Writing a new post
+
+Posts are page bundles. Create a folder with an `index.md` and drop any images
+alongside it (name the cover `feature.png`/`.jpg` so Congo picks it up as the hero):
+
 ```bash
-hugo new posts/my-new-post.md
+mkdir -p content/learning-log/my-new-post
+$EDITOR content/learning-log/my-new-post/index.md
 ```
 
-### Local Development
-To preview the site locally (including drafts), run:
-```bash
-hugo server -D
+Minimal front matter:
+
+```yaml
+---
+title: "My New Post"
+date: 2026-07-18
+draft: false
+tags: ["go", "docker"]
+categories: ["Learning Log"]
+---
 ```
-The site will be available at `http://localhost:1313`.
 
-### Deployment Pipeline
-This blog is configured with a GitHub Actions workflow (`.github/workflows/deploy.yml`). 
-Every time you push changes to the `main` branch, the workflow will automatically build the Hugo site and deploy it to GitHub Pages.
+## Local development
 
-#### Initial GitHub Pages Setup:
-1. Go to your GitHub repository in the browser.
-2. Navigate to **Settings** > **Pages**.
-3. Under **Build and deployment** > **Source**, select **GitHub Actions**.
-4. Push your code to the `main` branch. The action will run and your site will be live!
+```bash
+hugo server -D            # preview at http://localhost:1313 (includes drafts)
+hugo --gc --minify        # production build into ./public
+```
+
+## Changing the colour scheme
+
+In `config/_default/params.toml`, set `colorScheme` to one of:
+`congo`, `avocado`, `cherry`, `fire`, `ocean`, `sapphire`, `slate`.
+
+## Deployment
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which installs Go +
+Hugo Extended, builds the site, and publishes to GitHub Pages.

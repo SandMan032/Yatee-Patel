@@ -1,0 +1,69 @@
+# ── Appearance ────────────────────────────────────────────────────────────
+colorScheme = "ocean"          # deep-blue / teal Congo scheme
+defaultAppearance = "auto"     # follow the visitor's OS light/dark preference
+autoSwitchAppearance = true
+
+# ── Site-wide features ────────────────────────────────────────────────────
+enableSearch = true            # header search icon + /search page (needs JSON output)
+enableCodeCopy = true          # copy button on every code block
+enableImageLazyLoading = true
+enableImageWebp = true
+robots = "index, follow"
+titleCase = false
+
+# ── Header ────────────────────────────────────────────────────────────────
+[header]
+  layout = "basic"             # brand left, menu right
+  showTitle = true
+
+# ── Footer ────────────────────────────────────────────────────────────────
+[footer]
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true   # visible light/dark toggle
+  showScrollToTop = true
+
+# ── Homepage (profile layout) ─────────────────────────────────────────────
+[homepage]
+  layout = "profile"           # centred author card + recent posts
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/bot-architecture/"
+  cardView = true              # recent posts as image cards
+  layoutBackgroundBlur = true
+
+# ── Article pages ─────────────────────────────────────────────────────────
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showHero = true
+  heroStyle = "background"      # feature image as a blurred hero behind the title
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+  showComments = false         # off for now — giscus can drop in here later
+  sharingLinks = ["linkedin", "twitter", "email", "link"]
+
+# ── Section / list pages ──────────────────────────────────────────────────
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showCards = true             # posts render as image cards
+  groupByYear = true
+  cardView = true
+
+# ── Taxonomy pages ────────────────────────────────────────────────────────
+[taxonomy]
+  showTermCount = true
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
