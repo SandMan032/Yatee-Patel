@@ -141,7 +141,7 @@ projects: ["algo-trading-bot"]
 | `categories` | ✅ | Match the section: `["Deep Dives"]`, `["Learning Log"]`, or `["Misc"]`. |
 | `projects` | optional | Slugs of projects this post belongs to (must match a folder in `content/projects/`). A post can join multiple projects. Omit if it belongs to none. |
 
-Existing project slugs: `algo-trading-bot`, `infra-devops`, `this-blog`.
+Existing project slugs: `algo-trading-bot`, `this-blog`.
 
 ---
 

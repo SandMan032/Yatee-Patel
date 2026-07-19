@@ -9,10 +9,6 @@ categories: ["Misc"]
 projects: ["this-blog"]
 ---
 
-{{< alert icon="pencil" >}}
-**Demo / placeholder post.** This is filler content used to demonstrate the
-blog's layout for shorter, essay-style posts.
-{{< /alert >}}
 
 {{< lead >}}
 You don't really understand a system until you've had to explain it to someone
@@ -42,7 +38,7 @@ laptop. This journal is an attempt to make some of it stick.
 None of it is polished on the first pass. That's the point — this is a working
 notebook, published in the open.
 
-![A tidy desk is a placeholder for a tidy mental model](sample-desk.png "Placeholder cover image")
+
 
 If any of it is useful to you, that's a bonus. Mostly, I'm writing it for the
 version of me who has to maintain all this next quarter.
