@@ -1,10 +1,10 @@
 ---
 title: "Building a Resilient Options Scalping Bot"
-date: 2026-07-19
+date: 2026-07-18
 draft: false
 description: "An architectural overview of building a low-latency, automated options scalping bot for the Indian market."
 summary: "An architectural overview of the Kotak Neo Scalper, highlighting how it tackles data ingestion latency, broker margin quirks, and strict temporal risk boundaries."
-tags: ["deep-dives", "algorithmic-trading-bot", "architecture", "systems-design"]
+tags: ["architecture", "systems-design"]
 categories: ["Deep Dives"]
 projects: ["algo-trading-bot"]
 ---

@@ -13,7 +13,7 @@
   {{ if .Pages }}
     {{ partial "cards-style.html" . }}
     <section class="proj-grid">
-      {{ range .Pages.ByDate.Reverse }}
+      {{ range .Pages.ByDate }}
         {{ partial "proj-card.html" (dict
           "page" .
           "summary" .Summary
