@@ -23,7 +23,7 @@ If you've ever traded Nifty 50 options, you know exactly why that statistic exis
 
 In intraday scalping, the window to capture a profitable micro-trend often opens and closes within seconds. By the time a human trader processes a standard 1-minute candle, spots a moving average crossover, and manually punches in an order, the premium has already spiked. You end up chasing the market, buying at the top of a whip-saw, and getting stopped out.
 
-{{< alert icon="fire" cardColor="#5e2020" iconColor="#ef4444" textColor="#fee2e2" >}}
+{{< alert "triangle-exclamation" >}}
 **The emotional tax:** The hardest part of manual scalping isn't finding the entry—it's having the robotic discipline to cut a loss exactly at 20% when the screen is flashing red.
 {{< /alert >}}
 
@@ -38,7 +38,7 @@ Building an automated system sounds great in theory, but actually integrating wi
 **1. The Latency Bottleneck**
 Fetching historical candle data through standard REST APIs introduces massive round-trip network latencies. When you constantly poll an API for the latest price, that delay is harmful—by the time you receive the data and your strategy computes a signal, the entry point has already vanished. We needed a way to ingest live market updates instantaneously, completely bypassing the lag of traditional API polling.
 
-{{< alert icon="lightbulb" >}}
+{{< alert "lightbulb" >}}
 **Rule of thumb:** In options scalping, the faster your data aggregation, the closer your theoretical strategy matches your live execution. 15-second intervals hit the sweet spot between filtering noise and executing early.
 {{< /alert >}}
 

@@ -17,7 +17,7 @@ When you are trying to capture micro-trends in index options, the market state c
 
 Imagine your bot detects a golden entry signal and fires off a market order, only to realize the premium has already spiked 4% in the time it took your data to arrive. That delay translates directly into brutal slippage. If you want to survive as a retail algorithmic trader, ensuring your data is absolutely fresh isn't just an optimization; it is a strict baseline requirement for profitability.
 
-{{< alert icon="exclamation" cardColor="#5e2020" iconColor="#ef4444" textColor="#fee2e2" >}}
+{{< alert "triangle-exclamation" >}}
 **The Slippage Tax:** In scalping, a 500ms data delay doesn't just reduce your profit—it actively turns winning strategies into losing ones by forcing you to buy the top of every whip-saw.
 {{< /alert >}}
 
@@ -35,7 +35,7 @@ This is where **WebSockets** come in. Instead of opening and closing a new conne
 
 For a scalping bot, that ~400ms difference is the gap between a highly profitable trade and a devastating loss.
 
-{{< alert icon="lightbulb" >}}
+{{< alert "lightbulb" >}}
 **The Mental Model:** Think of REST APIs like repeatedly refreshing a web page to check if you got a new email. WebSockets are like receiving a push notification the exact millisecond the email arrives.
 {{< /alert >}}
 

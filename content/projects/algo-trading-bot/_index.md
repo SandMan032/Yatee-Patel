@@ -11,3 +11,9 @@ low-latency data ingestion, the pre-trade risk gate, and the order routing that
 has to stay correct when the market moves against you.
 
 The posts below document how each piece is designed and built.
+
+{{< alert "circle-info" >}}
+**The source is private for now.** This bot runs live against real capital, so the
+repository stays closed while it's in production. Happy to walk through specific parts
+of the design — feel free to [reach out](/about/).
+{{< /alert >}}

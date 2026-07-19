@@ -266,19 +266,22 @@ Use for tips, warnings, key rules. Default style:
 A neutral, important note.
 {{< /alert >}}
 ```
-With an icon (common icons: `lightbulb`, `check`, `pencil`, `fire`, `exclamation`):
+With an icon — **the icon is a positional argument, in quotes, NOT `icon="..."`:**
 ```markdown
-{{< alert icon="lightbulb" >}}
+{{< alert "lightbulb" >}}
 **Rule of thumb:** a short, memorable takeaway.
 {{< /alert >}}
 ```
-Coloured variant (used for emphasis boxes):
-```markdown
-{{< alert icon="lightbulb" cardColor="#1e3a5f" iconColor="#38bdd2" textColor="#e2e8f0" >}}
-A highlighted insight in the blog's ocean-accent colours.
-{{< /alert >}}
-```
-> The blog's accent colour is `#38bdd2` (ocean cyan). Reuse it for highlighted alerts to stay on-brand.
+> **Important:** this theme's `alert` takes the icon as the first positional value
+> (`{{</* alert "lightbulb" */>}}`). Writing `icon="lightbulb"` is silently ignored and
+> falls back to the default warning triangle. There is also **no** support for custom
+> colours (`cardColor`/`iconColor`/`textColor` do nothing) — every alert uses the theme's
+> standard style. Pick the icon to signal intent instead.
+>
+> **Icons that exist in this theme** (use only these — anything else renders blank/default):
+> `triangle-exclamation` (warning), `circle-info` (note), `lightbulb` (tip/insight),
+> `check` (confirmation), `pencil` (editorial note), `comment`, `edit`, `link`,
+> `github`, `linkedin`.
 
 ### Buttons (call-to-action link)
 Usually at the end, linking to a related section:
@@ -330,7 +333,7 @@ Prose, then a code example:
 func example() {}
 ```
 
-{{< alert icon="lightbulb" >}}
+{{< alert "lightbulb" >}}
 **Rule of thumb:** the one thing to remember from this section.
 {{< /alert >}}
 
